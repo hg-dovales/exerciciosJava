@@ -1,7 +1,6 @@
 public class ControleSaldo{
     public static void main(String[] args){
         int operacao = 1;
-        double saldoFinal = 0;
         double saldo = 500.00;
         double saque = 100.0;
         double deposito = 50.00;

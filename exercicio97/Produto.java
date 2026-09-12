@@ -16,4 +16,11 @@ public class Produto {
     int getQuantidadeEstoque(){
         return quantidadeEstoque;
     }
+    void setPreco(double novoPreco){
+        if(novoPreco <= 0){
+            System.out.println("Preço inválido.");
+        } else{
+            preco = novoPreco;
+        }
+    }
 }

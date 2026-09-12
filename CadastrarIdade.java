@@ -14,7 +14,7 @@ public class CadastrarIdade {
         do{
             System.out.print("Digite a idade: ");
             idade = scanner.nextInt();
-            if(idade < 0 || idade > 120){
+            if(idade < MINIMO_IDADE || idade > MAXIMO_IDADE){
                 System.out.println("Idade Invalida");
             } 
         } while(idade < 0 || idade > 120);

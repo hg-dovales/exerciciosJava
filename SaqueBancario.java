@@ -36,6 +36,6 @@ public class SaqueBancario {
     }
     public static void exibirRelatorio(double saque, double saldoAtual){
         System.err.println("Saque realizado: " + saque);
-        System.err.println("Saque restante: " + saldoAtual);
+        System.err.println("Saldo restante: " + saldoAtual);
     }
 }

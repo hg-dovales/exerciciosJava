@@ -1,26 +1,18 @@
-public class Produto {
-    private String nome;
-    private double preco;
-    private int quantidadeEstoque;
-    public Produto(String nomeInicial, double precoInicial, int quantidadeEstoqueInicial){
-        nome = nomeInicial;
-        preco = precoInicial;
-        quantidadeEstoque = quantidadeEstoqueInicial;
+public class ContaBancaria {
+    private String titular;
+    private double saldoInicial;
+    public ContaBancaria(String titular, double saldoInicial){
+        this.titular = titular;
+        this.saldoInicial = saldoInicial;
+        if(this.saldoInicial < 0.0){
+                System.out.println("Saldo inicial inválido.");
+                this.saldoInicial = 0.0;
+            }
     }
-    String getNome(){
-        return nome;
+    String getTitular(){
+        return titular;
     }
-    double getPreco(){
-        return preco;
-    }
-    int getQuantidadeEstoque(){
-        return quantidadeEstoque;
-    }
-    void setPreco(double novoPreco){
-        if(novoPreco <= 0){
-            System.out.println("Preço inválido.");
-        } else{
-            preco = novoPreco;
-        }
+    double getSaldoInicial(){
+        return saldoInicial;
     }
 }

@@ -1,3 +1,5 @@
+package exercicio118;
+
 public class MovieSession{
   private String movieTitle;
   private double ticketPrice;

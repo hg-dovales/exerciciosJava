@@ -14,7 +14,7 @@ public class Ticket{
     if(!isStudent){
       return movieSession.getTicketPrice();
     } else{
-      return movieSession.getTicketPrice() * CONCESSION_TICKET;
+      return movieSession.getTicketPrice() * STUDENT_DISCOUNT;
     }
   }
   boolean confirmPurchase(){

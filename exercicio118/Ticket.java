@@ -1,7 +1,7 @@
 package exercicio118;
 
 public class Ticket{
-  private static final double CONCESSION_TICKET = 0.5;
+  private static final double STUDENT_DISCOUNT = 0.5;
   private MovieSession movieSession;
   private String customerName;
   private boolean isStudent;

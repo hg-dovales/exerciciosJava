@@ -18,7 +18,7 @@ public class Ticket{
     }
   }
   boolean confirmPurchase(){
-    if(!movieSession.reserveSeat){
+    if(!movieSession.reserveSeat()){
       System.out.println("Não há assentos disponíveis.");
       return false;
     } else {

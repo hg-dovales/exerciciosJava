@@ -5,7 +5,7 @@ public class Main{
     MovieSession movieSession = new MovieSession("Interestelar", 40.0, 1);
     Ticket ticket = new Ticket(movieSession, "Gabriel", true);
     System.out.println("Filme: " + movieSession.getMovieTitle());
-    System.out.println("Valor: " + ticket.calculateTotal());
+    System.out.println("Valor: " + ticket.calculatePrice());
     System.out.println("Assentos: " + movieSession.getAvailableSeats());
     ticket.confirmPurchase();
     System.out.println("Assentos: " + movieSession.getAvailableSeats());

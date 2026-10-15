@@ -1,3 +1,5 @@
+package exercicio118;
+
 public class Ticket{
   private static final double CONCESSION_TICKET = 0.5;
   private MovieSession movieSession;

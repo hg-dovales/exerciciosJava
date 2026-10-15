@@ -1,7 +1,7 @@
 package exercicio118;
 
 public class Main{
-  public static void main(Strings[] args){
+  public static void main(String[] args){
     MovieSession movieSession = new MovieSession("Interestelar", 40.0, 1);
     Ticket ticket = new Ticket(movieSession, "Gabriel", true);
     System.out.println("Filme: " + movieSession.getMovieTitle());

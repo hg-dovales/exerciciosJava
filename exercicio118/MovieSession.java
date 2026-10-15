@@ -7,13 +7,13 @@ public class MovieSession{
   public MovieSession(String movieTitle, double ticketPrice, int availableSeats){
     this.movieTitle = movieTitle;
     if(ticketPrice <= 0.0){
-      System.out.println("Preco do ingresso invalido.")
+      System.out.println("Preço do ingresso inválido.")
       this.ticketPrice = 0.0;
     } else{
       this.ticketPrice = ticketPrice;
     }
     if(availableSeats < 0){
-      System.out.println("Quantidade de acentos invalido.");
+      System.out.println("Quantidade de assentos inválida.");
       this.availableSeats = 0;
     } else{
       this.availableSeats = availableSeats;

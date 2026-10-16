@@ -1,7 +1,7 @@
 package exercicio119;
 
 public class Membership {
-    private static final double STUDENT_DISCOUNT = 0.15;
+    private static final double STUDENT_DISCOUNT = 0.85;
     private Gym gym;
     private String memberName;
     private int numberOfMonths;
@@ -12,7 +12,7 @@ public class Membership {
         this.isStudent = isStudent;
         if(numberOfMonths <= 0){
             System.out.println("Quantidade de meses invalida.");
-            this.numberOfMonths = 0;
+            this.numberOfMonths = 1;
         } else{
             this.numberOfMonths = numberOfMonths;
         }

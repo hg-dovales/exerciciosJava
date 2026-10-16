@@ -1,7 +1,7 @@
 package exercicio119;
 
 public class Membership {
-    private static final double STUDENT_DISCOUNT = 0.85;
+    private static final double STUDENT_PRICE_RATE = 0.85;
     private Gym gym;
     private String memberName;
     private int numberOfMonths;
@@ -19,13 +19,13 @@ public class Membership {
     }
     double calculateTotal(){
         if(isStudent && numberOfMonths >= 6){
-            return (numberOfMonths * gym.getMonthlyFee()) * STUDENT_DISCOUNT;
+            return (numberOfMonths * gym.getMonthlyFee()) * STUDENT_PRICE_RATE;
         } else{
             return numberOfMonths * gym.getMonthlyFee();
         }
     }
     boolean confirmMembership(){
-        if(!gym.registerMenber()){
+        if(!gym.registerMember()){
             System.out.println("Não ha vagas disponiveis.");
             return false;
         } else{

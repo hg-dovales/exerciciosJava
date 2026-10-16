@@ -28,7 +28,7 @@ public class Gym {
     int getAvailableSpots(){
         return availableSpots;
     }
-    boolean registerMenber(){
+    boolean registerMember(){
         if(availableSpots < 1){
             return false;
         } else{
